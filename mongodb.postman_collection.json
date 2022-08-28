@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "e091cc15-374a-4518-a4bd-7d328230d60a",
+		"name": "mongodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateArticle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n     \"fileName\": \"Test.pdf\",  \r\n     \"author\": \"Mobile Content Team\",  \r\n     \"title\": \"Discovery of Mongo2\",  \r\n     \"keywords\": \"mongo database test document\",  \r\n     \"chunkSize\": 261120,  \r\n     \"length\": 2740169,  \r\n     \"uploadDate\": \"2022-08-26T04:00:44.416Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/v1/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateUser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n     \"fileName\": \"Test.pdf\",  \r\n     \"author\": \"Mobile Content Team\",  \r\n     \"title\": \"Discovery of Mongo2\",  \r\n     \"keywords\": \"mongo database test document\",  \r\n     \"chunkSize\": 261120,  \r\n     \"length\": 2740169,  \r\n     \"uploadDate\": \"2022-08-26T04:00:44.416Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/v1/articles/put",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"articles",
+						"put"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteArticle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n     \"fileName\": \"Test.pdf\",  \r\n     \"author\": \"Mobile Content Team\",  \r\n     \"title\": \"Discovery of Mongo2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/v1/articles/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"articles",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getArticleByTitle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Discovery of Mongo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/api/v1/articles/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"articles",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllArticles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/api/v1/articles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"api",
+						"v1",
+						"articles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
